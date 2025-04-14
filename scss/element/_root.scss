@@ -1,0 +1,18 @@
+// Définition de la couleur du fond et de l'agencement de base des élément (root)
+body{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: $doc-background-color;
+}
+
+// Positionnement des divs principaux et lancement de l'animation d'entrée
+root{
+    position: absolute; 
+    top: 7%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 5%; 
+    animation-duration: 3s;
+    animation-name: slidein;
+  }

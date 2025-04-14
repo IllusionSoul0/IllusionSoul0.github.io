@@ -1,0 +1,15 @@
+@import 'utils/variables'; // Import des différentes variables
+@import 'utils/mixin'; // Import de tous les mixins
+@import 'utils/keyframe'; // Import de toutes les keyframes
+
+
+@import 'base/typography'; // Import du style de la typographie
+@import 'base/line'; // Import du style de base des lignes du fond
+
+@import 'element/background-layer'; // Import du style du conteneur des lignes
+@import 'element/root'; // Import des styles du body et de root
+@import 'element/info'; // Import des styles du div .info et de son contenu
+@import 'element/skills'; // Import des styles du div .skills et de son contenu
+@import 'element/secretbutton'; // Import du style du bouton secret
+
+@import 'utils/mediaquery'; // Import des Médias Query

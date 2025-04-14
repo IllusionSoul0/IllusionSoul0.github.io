@@ -1,0 +1,17 @@
+.line {
+    position: absolute; 
+    z-index: 0; // Les lignes sont en arrières plans
+    border-radius: 1em; 
+    animation-duration: 1s; 
+  }
+
+// Animation différente si les lignes sont verticales ou horizontales
+.line-wide {
+    transform: scaleX(1);
+    animation-name: change-width;
+  }
+  
+.line-high {
+    transform: scaleY(1);
+    animation-name: change-height;
+  }

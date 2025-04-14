@@ -1,0 +1,147 @@
+// Style du conteneur des informations générales
+.info{
+    @include element-div;
+    position: sticky;
+    top: 15%;
+    width: 500px;
+    height: 320px;
+    display: grid;
+    grid-column-gap: 1vw;
+  }
+
+// Style de la photo principale
+#photo-cv{
+  cursor:pointer;
+  width: 200px;
+  border-radius: 8px;
+  border: 3px, rgb(255, 255, 255), solid;
+  grid-column: 1;
+  grid-row: 1/4;
+  transition: 0.3s ease-in-out;
+}
+
+#photo-cv:hover{
+  transform: scale(1.025);
+}
+
+// Style des titres du conteneur d'information
+.info h1{
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.info h2{
+  grid-column: 2;
+  grid-row: 2;
+}
+
+
+// Conteneur des liens et ses images
+.link{
+  @include element-div;
+  grid-column: 2;
+  grid-row: 3;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  grid-template-rows:auto auto;
+  justify-content:space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.link img{
+  width: 30px;
+  transition: 5s ease-in;
+}
+
+.link img:hover{
+  transform: scale(5);
+}
+
+
+// Style du bouton télécharger et de ses élément de base
+#download-cv{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: $text-color;
+  font-weight: bold;
+  padding: 0;
+}
+
+#download-img {
+  width: 20px;
+  height: 20px;
+}
+
+#download-button {
+  margin: 0;
+  background-color: #ffffff;
+  border: 0;
+  height: 35px;
+  border-radius: 8px;
+  padding: 0px 16px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+
+// Style de l'animation du bouton télécharger
+#download-button .loader, #download-button .checkmark-svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+#download-button .loader {
+  border: 3px solid $text-color;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+}
+
+#download-button.success {
+  background-color: #fff;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-left: 15px;
+  padding: 0;
+}
+
+#download-button.success .button-text {
+  opacity: 0;
+}
+
+#download-button.success .loader {
+  display: none;
+}
+
+#download-button.success .checkmark-svg {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+.checkmark-circle {
+  stroke: $text-color;
+  stroke-width: 8;
+  stroke-dasharray: 150;
+  stroke-dashoffset: 150;
+  animation: circle-animation 0.6s ease forwards;
+}
+
+.checkmark-check {
+  stroke: $text-color;
+  stroke-width: 8;
+  animation: check-animation 0.3s 0.6s ease forwards;
+}

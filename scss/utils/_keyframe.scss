@@ -1,0 +1,57 @@
+// Animation pour le bouton télécharger
+@keyframes spin {
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+  
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+  
+@keyframes circle-animation {
+    to {
+        stroke-dashoffset: 0;
+    }
+  }
+  
+@keyframes check-animation {
+    to {
+        stroke-dashoffset: 0;
+    }
+  }
+
+
+// Animation d'entrée des éléments
+@keyframes slidein {
+    from{
+        margin-top:100%;
+    }
+}
+
+
+// Animation de grossissement des lignes à leurs apparitions
+@keyframes change-width {
+    0% {
+        transform: scaleX(0); 
+    }
+  
+    100% {
+        transform: scaleX(1);  
+    }
+  } 
+  
+@keyframes change-height {
+    0% {
+        transform: scaleY(0); 
+    }
+  
+    100% {
+        transform: scaleY(1);  
+    }
+  } 

@@ -1,0 +1,58 @@
+// Quand la largeur de l'écran est inférieure a 1400px, met le conteneur .info au dessus de .skills
+@media screen and (max-width: 1400px){
+    root{
+        flex-direction: column;
+        row-gap: 60px;
+        align-items: center;
+    }
+
+    .info{
+        position: relative;
+        top: 0;
+    }
+}
+
+// Quand la largeur de l'écran est inférieure a 850px, adapte la largeur des divs dans .skills à celles de l'écran
+@media screen and (max-width: 850px){
+
+    .skills>div{
+        width: 85vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+// Quand la largeur de l'écran est inférieure a 600px, réduit les écriture dans .skills et adapte les tailles dans .info
+@media screen and (max-width: 600px){
+
+    .skills {
+        font-size: 70%;
+    }
+
+    .info {
+        width: 85vw;
+        font-size: calc(5px + 2vw);
+        height: calc(250px + 30vw);
+    }
+
+    .link {
+        gap: 1px;
+        justify-content: space-around;
+        grid-column: 1/3;
+        grid-row: 3;
+        height: 30px;
+        margin-top: 15px;
+        margin-bottom: 55px;
+    }
+
+    .link img {
+        width: 20px;
+    }
+
+    #photo-cv {
+        width: 40vw;
+        max-width: 200px;
+        grid-column: 1;
+        grid-row: 1/3;       
+    }
+}

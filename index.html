@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css"> <!--Lien feuille de style-->
+    <script src="/js/script.js"></script> <!--Lien vers fichier javascript-->
+    <title>Portfolio Maxime CHAINTREAU</title>
+</head>
+<body>
+    <div id="background-layer"></div> <!--Div contenant les lignes ajoutées au mouvement de la souris-->
+
+    <root>
+        <div class="info element-div">
+            <img src="/image/photo-cv.jpg" alt="photo Maxime CHAINTREAU" id="photo-cv"> <!--Photo grand format de Maxime CHAINTREAU-->
+            <h1>Maxime Chaintreau</h2>
+            <h2>Etudiant à l'Efrei</h2>
+
+            <div class="link element-div">
+                <button id="download-button" onclick="download()"> <!--Bouton de téléchargement du cv avec conteneur pour animation-->
+                    <span class="button-text"><a href="/complementFile/Cv Maxime Chaintreau.pdf" download="CV Maxime CHAINTREAU" id="download-cv"><p id="cv-text">CV</p><img src="/image/download.png" alt="bouton télécharger" id="download-img"></a></span>
+                        <div class="loader"></div>
+                        <svg class="checkmark-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                            <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+                            <path class="checkmark-check" fill="none" d="M14 27l10 10L39 17"/>
+                        </svg>
+                </button>
+                <a href="https://www.linkedin.com/in/maxime-chaintreau-421997332/"><img src="/image/media-link/linkedin-logo.png" alt="logo linkedin"></a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="/image/media-link/instagram-logo.png" alt="logo instagram"></a>
+                <a href="https://github.com/IllusionSoul0"><img src="/image/media-link/github-logo.png" alt="logo github"></a>
+            </div>
+        </div> <!--Fin div .info-->
+
+        <div class="skills">
+
+            <div class="programming-language-mastered element-div">
+                <h1>Langages maîtrisés</h1>
+                <br><br>
+                <div class="list-of-element">
+                    <div id="element">
+                        <img src="/image/programmaming-language/python-logo.png" alt="logo python">
+                        <p>Python</p>
+                    </div>
+                    <div id="element">
+                        <img src="/image/programmaming-language/java-logo.png" alt="logo java">
+                        <p>Java</p>
+                    </div>
+                    <div id="element">
+                        <img src="/image/programmaming-language/c-logo.png" alt="logo c">
+                        <p>C</p>
+                    </div>
+                    <div id="element">
+                        <img src="/image/programmaming-language/javascript-logo.png" alt="logo javascript">
+                        <p>Javascript</p>
+                    </div>
+                    <div id="element">
+                        <img src="/image/programmaming-language/html-logo.png" alt="logo html">
+                        <p>Html</p>
+                    </div>
+                    <div id="element">
+                        <img src="/image/programmaming-language/css-logo.png" alt="logo css">
+                        <p>CSS</p>
+                    </div>
+                    <div id="element">
+                        <img src="/image/programmaming-language/sql-logo.png" alt="logo sql">
+                        <p>Sql</p>
+                    </div>
+                </div> <!--Fin div .list-of-element-->
+
+            </div> <!--Fin div .programming-language-mastered-->
+
+            <div class="sowtfare-mastered element-div">
+                <h1>Logiciels maîtrisés</h1>
+                <br><br>
+                <div class="list-of-element">
+                    <div id="element">
+                        <img src="/image/software/git-logo.png" alt="logo git">
+                        <p>Git</p>
+                    </div>
+                    <div id="element">
+                        <img src="/image/software/figma-logo.png" alt="logo figma">
+                        <p>Figma</p>
+                    </div>
+                    <div id="element">
+                        <img src="/image/software/gsuite-logo.png" alt="logo g-suite">
+                        <p>G-suite</p>
+                    </div>
+                    <div id="element">
+                        <img src="/image/software/office-logo.png" alt="logo office">
+                        <p>Office</p>
+                    </div>
+                    <div id="element">
+                        <img src="/image/software/canva-logo.png" alt="logo canva">
+                        <p>Canva</p>
+                    </div>
+                </div> <!--Fin div .list-of-element-->
+
+            </div> <!--Fin div .sowftare-mastered-->
+
+            <div class="experience-list element-div">
+                <h1>Expériences</h1>
+                <br>
+                <div id="experience">
+                    <img src="/image/experience/signactif-logo.png" alt="logo signactif">
+                    <h2>Développeur web et application - Stage</h2>
+                    <h3>Signactif</h3>
+                    <p>2025</p>
+                    <ul>
+                        <li>Mise en place d'un "datalake" permettant le stockage de données provenant de différents types de capteurs (qualité de l'air, comptage de personnes, ...)</li>
+                        <li>Développement d'un tableau de bord en javascript permettant le suivi de l'état des capteurs</li>
+                        <li>Utilisation de l'environnement "Google Cloud plateform"</li>
+                    </ul>
+                </div>
+            </div> <!--Fin div .experience-list-->
+
+            <div class="formation-list element-div">
+                <h1>Formation</h1>
+                <br>
+                <div id="formation">
+                    <h2>Efrei Paris</h2>
+                    <h3>Bachelor Ingénierie et Numérique</h3>
+                    <p>Villejuif</p>
+                    <p>2024-2027</p>
+                </div>
+                <hr>
+                <div id="formation">
+                    <h2>Lycée Jules Verne</h2>
+                    <h3>Baccalauréat Général - Spécialités Mathématiques, NSI</h3>
+                    <p>Limours</p>
+                    <p>2021-2024</p>
+                </div>
+
+            </div> <!--Fin div .formation-list-->
+
+            <!-- A rejouter quand il y aura des projets
+            <div class="projet-list element-div">
+                <h1>Projets</h1>
+                
+
+            </div> Fin div .projet-list-->
+
+        </div> <!--Fin div .skills-->
+
+        <button class="secret" onclick="surprise()"></button> <!--Bouton caché situé en bas a droite de l'écran-->
+
+
+    </root>
+</body>
+</html>

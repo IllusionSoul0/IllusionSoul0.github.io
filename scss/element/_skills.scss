@@ -1,0 +1,85 @@
+// Style pour les divs du conteneur skills
+.skills{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+    margin-bottom: 7%;
+  }
+
+// Tous les conteneurs contenu directement dans skills ont le style par défault du mixin
+.skills>div{
+    @include element-div;
+  }
+
+// Style pour toutes les liste d'élément 
+.list-of-element{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: end;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+#element img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+
+#element img:hover{
+    transform: scale(1.5) rotate(5turn);
+  }
+
+
+#element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+// Style pour les conteneurs d'experience et formation
+#formation, #experience{
+  text-align: left;
+  border: 3px solid $text-color;
+  margin: 1%;
+  border-radius: 15px;
+  position: relative;
+  transition: .3s ease-in-out;
+}
+
+#experience:hover, #formation:hover{
+  background-color: #102E50;
+  transform: scale(1.025) rotate(0.001turn);
+}
+
+#experience>*{
+  text-align:left;
+  margin-left: 3%;
+  margin-right: 2%;
+}
+
+#experience img{
+  margin-left: 39%;
+  margin-top: 15px;
+  width:150px;
+}
+
+#formation h2{
+  margin-left : 5%;
+  margin-right: auto;
+}
+
+#formation h3,p{
+  margin-left : 2%;
+}
+
+// Style pour un hr arc-en-ciel
+.formation-list hr {
+  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, purple);
+  height: 5px;
+  border: 0;
+}
